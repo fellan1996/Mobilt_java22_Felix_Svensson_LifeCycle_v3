@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">android_lifeCycle_Kotlin</string>
+    <string name="menu_form">Form</string>
+    <string name="home">Home</string>
+</resources>
