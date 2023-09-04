@@ -9,7 +9,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuInflater
-import java.util.zip.Inflater
 
 class MainActivity : AppCompatActivity() {
 
@@ -43,10 +42,4 @@ class MainActivity : AppCompatActivity() {
         inflater.inflate(R.menu.menu_example, menu)
         return super.onCreateOptionsMenu(menu)
     }
-
-//    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-//        val inflater: MenuInflater = menuInflater
-//        inflater.inflate(R.menu.menu_example,menu)
-//        return super.onCreateOptionsMenu(menu)
-//    }
 }
