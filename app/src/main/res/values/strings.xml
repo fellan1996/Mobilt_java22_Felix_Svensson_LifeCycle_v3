@@ -2,4 +2,14 @@
     <string name="app_name">android_lifeCycle_Kotlin</string>
     <string name="menu_form">Form</string>
     <string name="home">Home</string>
+    <string name="log_in_out">Log In/out</string>
+    <string name="username">username</string>
+    <string name="kalle">Kalle</string>
+    <string name="login">Login</string>
+    <string name="kanel">Kanel</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="form_fragment">form fragment</string>
+    <string name="home_fragment">home fragment</string>
+    <string name="login_out_fragment">login/Out fragment</string>
 </resources>

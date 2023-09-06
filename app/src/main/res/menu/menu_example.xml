@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/new_game"
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/loginInOut"
+        android:icon="@drawable/login_24"
+        android:title="@string/log_in_out" />
+    <item android:id="@+id/homeBtn"
+        android:icon="@drawable/baseline_home_24"
+        android:title="@string/home" />
+    <item android:id="@+id/formBtn"
         android:icon="@drawable/form_24"
         android:title="@string/menu_form"/>
-    <item android:id="@+id/help"
-        android:icon="@drawable/icon_lifecycle"
-        android:title="@string/home" />
 </menu>
