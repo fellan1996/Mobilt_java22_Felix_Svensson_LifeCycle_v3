@@ -38,8 +38,6 @@ class FormFragment : Fragment() {
         if (nameInput != null) {
         LoggedInActivity.editor.putString("nameInput", nameInput.text.toString())
         LoggedInActivity.editor.apply()
-        }else {
-            Log.d("alrik", "nameInput was null - onPause - Form")
         }
 
     }

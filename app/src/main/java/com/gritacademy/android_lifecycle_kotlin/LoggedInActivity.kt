@@ -18,8 +18,6 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
-//TODO Man ska kunna skicka datan någonstans?
-
 class LoggedInActivity : AppCompatActivity() {
     companion object {
         lateinit var sharedPref: SharedPreferences
@@ -59,7 +57,7 @@ class LoggedInActivity : AppCompatActivity() {
                 else -> {
                     Toast.makeText(
                         this@LoggedInActivity,
-                        "wrong username or Password. Correct username is 'Kalle' and correct Password is 'Kanel' ",
+                        "Something went wrong, try pressing again ",
                         Toast.LENGTH_LONG
                     ).show()
                     true
@@ -69,31 +67,6 @@ class LoggedInActivity : AppCompatActivity() {
         }
 
     }
-
-    override fun onStart() {
-        super.onStart()
-    }
-
-
-    override fun onResume() {
-        super.onResume()
-    }
-
-    override fun onPause() {
-        super.onPause()
-        //   var sharedPref: SharedPreferences = getSharedPreferences(getString(R.string.preferences), MODE_PRIVATE)
-//        var editor: SharedPreferences.Editor = sharedPref.edit()
-
-
-        editor.putString("nyckel", "Message!!!!!")
-        editor.apply()
-        Log.d("alrik", sharedPref.getString("nyckel", "default value if null!!!!!")!!)
-    }
-
-    override fun onStop() {
-        super.onStop()
-    }
-
     private fun loadFragment(fragment: Fragment, initial: Boolean) {
         if (initial) {
             supportFragmentManager.beginTransaction()

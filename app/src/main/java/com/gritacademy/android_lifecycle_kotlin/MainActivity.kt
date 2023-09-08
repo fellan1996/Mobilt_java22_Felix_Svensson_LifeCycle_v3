@@ -13,11 +13,6 @@ import android.view.Menu
 import android.view.MenuInflater
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-
-//TODO Man ska kunna skicka datan någonstans?
-//TODO Datan ska sparas i formuläret om man inte slutför det
-//TODO fråga Alrik om vad han menar med att skicka datan. Firebase?
-
 class MainActivity : AppCompatActivity() {
 
     private lateinit var bottomNav: BottomNavigationView
@@ -65,8 +60,6 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
-
-
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         val inflater: MenuInflater = menuInflater
         inflater.inflate(R.menu.menu_example, menu)
