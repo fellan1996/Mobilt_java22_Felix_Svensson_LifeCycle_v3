@@ -23,7 +23,7 @@
             android:orientation="horizontal">
 
             <EditText
-                android:id="@+id/editTextText3"
+                android:id="@+id/editName"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -42,9 +42,9 @@
             android:orientation="horizontal">
 
             <EditText
-                android:id="@+id/editTextTextEmailAddress"
+                android:id="@+id/editEmailAddress"
                 android:layout_width="wrap_content"
-                android:layout_height="87dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:ems="10"
                 android:hint="email"
@@ -53,9 +53,9 @@
                 tools:ignore="HardcodedText,NestedWeights" />
 
             <EditText
-                android:id="@+id/editTextDate"
+                android:id="@+id/editDate"
                 android:layout_width="wrap_content"
-                android:layout_height="77dp"
+                android:layout_height="match_parent"
 
                 android:layout_weight="1"
                 android:ems="10"
@@ -72,7 +72,7 @@
             android:orientation="horizontal">
 
             <Switch
-                android:id="@+id/switch1"
+                android:id="@+id/switchLicense"
                 android:layout_width="612dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -87,19 +87,19 @@
                 android:orientation="vertical">
 
                 <CheckBox
-                    android:id="@+id/checkBox"
+                    android:id="@+id/checkBoxKotlin"
                     android:layout_width="197dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Gillar Kotlin"
+                    android:text="@string/gillar_kotlin"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                 <CheckBox
-                    android:id="@+id/checkBox2"
+                    android:id="@+id/checkBoxJava"
                     android:layout_width="196dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Gillar Java"
+                    android:text="@string/gillar_java"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
             </LinearLayout>
 
@@ -112,25 +112,25 @@
             android:orientation="horizontal">
 
             <RadioGroup
-                android:layout_width="669dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content" >
 
                 <RadioButton
-                    android:id="@+id/radioButton3"
+                    android:id="@+id/radioButtonVeg"
                     android:layout_width="match_parent"
                     android:layout_height="125dp"
 
                     android:layout_weight="1"
-                    android:text="Är vegetarian"
+                    android:text="@string/vegetarian"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                 <RadioButton
-                    android:id="@+id/radioButton"
+                    android:id="@+id/radioButtonMeat"
                     android:layout_width="match_parent"
                     android:layout_height="118dp"
 
                     android:layout_weight="1"
-                    android:text="Är allätare"
+                    android:text="@string/meat"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
             </RadioGroup>

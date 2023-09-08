@@ -32,6 +32,18 @@ class FormFragment : Fragment() {
         }
     }
 
+    override fun onPause() {
+        super.onPause()
+        var nameInput= activity?.findViewById<EditText>(R.id.editName)
+        if (nameInput != null) {
+        LoggedInActivity.editor.putString("nameInput", nameInput.text.toString())
+        LoggedInActivity.editor.apply()
+        }else {
+            Log.d("alrik", "nameInput was null - onPause - Form")
+        }
+
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -43,11 +55,9 @@ class FormFragment : Fragment() {
     override fun onStart() {
         super.onStart()
 
-        var ed= activity?.findViewById<EditText>(R.id.editTextTextEmailAddress)
-        ed!!.setText(sharedPref.getString("nyckel§","default"))
+        var nameInput= activity?.findViewById<EditText>(R.id.editName)
+        nameInput!!.setText(sharedPref.getString("nameInput","default"))
 
-       // ed.setText(activity as LoggedInActivity sharedPref.getString("message","default"))
-        Log.d("Alrik","hello")
     }
 
     companion object {

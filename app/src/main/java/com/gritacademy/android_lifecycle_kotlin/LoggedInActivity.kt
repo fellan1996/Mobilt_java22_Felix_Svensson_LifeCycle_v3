@@ -18,30 +18,25 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
-//TODO Man ska inte kunna komma in i form om man inte är inloggad
-//TODO Log in knappen ska ändras till en profilknapp om man är inloggad
 //TODO Man ska kunna skicka datan någonstans?
-//TODO Datan ska sparas i formuläret om man inte slutför det
-//TODO Vissa fält ska vara obligatoriska
-//TODO Man ska kunna logga in och automatiskt hamna på home-fragmentet
-//TODO fråga Alrik om vad han menar med att skicka datan. Firebase?
 
 class LoggedInActivity : AppCompatActivity() {
-    companion object{
+    companion object {
         lateinit var sharedPref: SharedPreferences
         lateinit var editor: SharedPreferences.Editor
     }
+
     private lateinit var bottomNav: BottomNavigationView
 
     @SuppressLint("CommitTransaction")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        sharedPref  = getSharedPreferences(getString(R.string.preferences), MODE_PRIVATE)
-        editor =  sharedPref.edit()
+        sharedPref = getSharedPreferences(getString(R.string.preferences), MODE_PRIVATE)
+        editor = sharedPref.edit()
         setContentView(R.layout.activity_logged_in)
         loadFragment(HomeFragment(), true)
-      bottomNav = findViewById<BottomNavigationView>(R.id.bottomNav)
+        bottomNav = findViewById<BottomNavigationView>(R.id.bottomNav)
         bottomNav.setOnItemSelectedListener {
 
             when (it.itemId) {
@@ -83,9 +78,10 @@ class LoggedInActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
     }
+
     override fun onPause() {
         super.onPause()
-     //   var sharedPref: SharedPreferences = getSharedPreferences(getString(R.string.preferences), MODE_PRIVATE)
+        //   var sharedPref: SharedPreferences = getSharedPreferences(getString(R.string.preferences), MODE_PRIVATE)
 //        var editor: SharedPreferences.Editor = sharedPref.edit()
 
 

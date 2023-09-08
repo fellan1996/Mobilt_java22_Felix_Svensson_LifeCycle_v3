@@ -13,4 +13,8 @@
     <string name="home_fragment">home fragment</string>
     <string name="login_out_fragment">login/Out fragment</string>
     <string name="preferences"></string>
+    <string name="meat">Är allätare</string>
+    <string name="vegetarian">Är vegetarian</string>
+    <string name="gillar_java">Gillar Java</string>
+    <string name="gillar_kotlin">Gillar Kotlin</string>
 </resources>
