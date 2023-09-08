@@ -1,10 +1,13 @@
 package com.gritacademy.android_lifecycle_kotlin
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.EditText
+import com.gritacademy.android_lifecycle_kotlin.LoggedInActivity.Companion.sharedPref
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -35,6 +38,16 @@ class FormFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_form, container, false)
+    }
+
+    override fun onStart() {
+        super.onStart()
+
+        var ed= activity?.findViewById<EditText>(R.id.editTextTextEmailAddress)
+        ed!!.setText(sharedPref.getString("nyckel§","default"))
+
+       // ed.setText(activity as LoggedInActivity sharedPref.getString("message","default"))
+        Log.d("Alrik","hello")
     }
 
     companion object {

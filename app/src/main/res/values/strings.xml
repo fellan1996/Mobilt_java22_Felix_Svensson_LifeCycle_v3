@@ -12,4 +12,5 @@
     <string name="form_fragment">form fragment</string>
     <string name="home_fragment">home fragment</string>
     <string name="login_out_fragment">login/Out fragment</string>
+    <string name="preferences"></string>
 </resources>
